@@ -2,35 +2,95 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>¡Listado de Productos!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Productos</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        h1, h2 {
+            color: #343a40;
+        }
+        .card {
+            margin: 20px 0;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
 </head>
-<body>
-    <h1>Productos</h1>
-<table>
-    <tr>
-        <th>Nombre</th>
-        <th>Precio</th>
-        <th>Unidad</th>
-        <th>Disponible</th>
-    </tr>
-    {% for producto in productos %}
-    <tr>
-        <td>{{ producto.nombre }}</td>
-
-        <td>{{ producto.precio }}</td>
-        
-        <td>{{ producto.unidad }}</td>
-        <td>
-            {% if producto.disponible %}
-                Activo
-            {% else %}
-                No disponible
-            {% endif %}
-        </td>
-    </tr>
-    {% endfor %}
-</table>
-
+<body class="container">
+    <h1 class="text-center my-4">TRENDSETTER</h1>
+    <h2 class="my-4">Ropa de Hombre</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="" alt="Camisa Vintage" class="product-image">
+                <div class="card-body">
+                    <h5 class="card-title">Camisa Vintage</h5>
+                    <p class="card-text">Camisa de algodón con estampado retro.</p>
+                    <p class="card-text"><strong>Precio: $30</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="" alt="Chaqueta Retro" class="product-image">
+                <div class="card-body">
+                    <h5 class="card-title">Chaqueta Retro</h5>
+                    <p class="card-text">Chaqueta de mezclilla con detalles desgastados.</p>
+                    <p class="card-text"><strong>Precio: $50</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="" alt="Pantalones Clásicos" class="product-image">
+                <div class="card-body">
+                    <h5 class="card-title">Pantalones Clásicos</h5>
+                    <p class="card-text">Pantalones de corte recto en color caqui.</p>
+                    <p class="card-text"><strong>Precio: $40</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="my-4">Ropa de Mujer</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="" alt="Vestido Floral" class="product-image">
+                <div class="card-body">
+                    <h5 class="card-title">Vestido Floral</h5>
+                    <p class="card-text">Vestido ligero con estampado floral.</p>
+                    <p class="card-text"><strong>Precio: $35</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="" alt="Blusa de Seda" class="product-image">
+                <div class="card-body">
+                    <h5 class="card-title">Blusa de Seda</h5>
+                    <p class="card-text">Blusa elegante de seda con detalles.</p>
+                    <p class="card-text"><strong>Precio: $45</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="" alt="Falda Larga" class="product-image">
+                <div class="card-body">
+                    <h5 class="card-title">Falda Larga</h5>
+                    <p class="card-text">Falda larga de mezclilla con un toque vintage.</p>
+                    <p class="card-text"><strong>Precio: $30</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
