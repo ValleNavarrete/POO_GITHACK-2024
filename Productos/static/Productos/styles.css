@@ -1,0 +1,28 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.jumbotron {
+    background-color: #a1be90;
+    color: white;
+}
+
+.jumbotron h1 {
+    font-size: 3rem;
+}
+
+.btn-primary {
+    background-color: #ff6f61;
+    border-color: #ff6f61;
+}
+
+
+body {
+    background-image: url("../Productos/images/background_TS.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #9b4b4b;  
+}
